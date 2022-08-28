@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+<style>
+    .color{
+        --hue:200;
+        --saturation:100%;
+        --lightness:50%;
+        background-color:hsl(var(--hue),var(--saturation),var(--lightness)) ;
+        width: 100%;
+        height: 150px;
+        /* background-color: rgb(243, 13, 57); */
+    }
+    .color:hover{
+        --lightness:30%;
+        /* background-color: hsl(200, 100%, 50%); */
+    }
+</style>    
+</head>
+    <body>
+    <div class="color"></div>
+    <br>
+    <br>
+    <h2>Hue</h2>
+    <div class="color-wheel-container">
+        <div class="color-wheel"></div>
+    </div>
+    <br>
+    <br>
+    <h2>Saturation </h2>
+</body>
+</html>
